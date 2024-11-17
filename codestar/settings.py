@@ -27,11 +27,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-upvg4!)dmky@qu-x*ry()((h$&&wkgua(83=!t7s&z0g==8^zl'
 
+SECRET_KEY = os.environ.get("SECRET_KEY")
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-chipsandbea-djangoblog1-7td9v9nf1zl.ws.codeinstitute-ide.net', 
+    '8000-chipsandbea-djangoblog1-hfqlafq7h12.ws.codeinstitute-ide.net', 
     '.herokuapp.com'
     ]
 
@@ -93,6 +95,10 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
