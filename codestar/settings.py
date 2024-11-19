@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '8000-chipsandbea-djangoblog1-hfqlafq7h12.ws.codeinstitute-ide.net', 
+    '8000-chipsandbea-djangoblog1-2rgo5h2eoe5.ws.codeinstitute-ide.net', 
     '.herokuapp.com'
     ]
 
