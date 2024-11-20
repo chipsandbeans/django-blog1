@@ -30,10 +30,10 @@ SECRET_KEY = 'django-insecure-upvg4!)dmky@qu-x*ry()((h$&&wkgua(83=!t7s&z0g==8^zl
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-chipsandbea-djangoblog1-2rgo5h2eoe5.ws.codeinstitute-ide.net', 
+    '8000-chipsandbea-djangoblog1-noyryouhi81.ws.codeinstitute-ide.net', 
     '.herokuapp.com'
     ]
 
