@@ -34,3 +34,11 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
+
+class Event(models.Model):
+    name = models.CharField(max_length=200)
+    date = models.DateTimeField()
+    location = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name
